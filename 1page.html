@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)https://s.codepen.io/boomerang/iFrameKey-baceaa82-985a-01a7-9464-36b2c1be7b7b/index.html -->
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="./console_runner-ce3034e6bde3912cc25f83cccb7caa2b0f976196f2f2d52303a462c826d54a73.js.download"></script>
+    <script src="./css_live_reload_init-890dc39bb89183d4642d58b1ae5376a0193342f9aed88ea04330dc14c8d52f55.js.download"></script>
+    <meta name="robots" content="noindex">
+    <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico">
+    <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111">
+    <link rel="canonical" href="https://codepen.io/luiquecruz/pen/geMVjK">
+
+<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<style class="cp-pen-styles">
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.dummy-text {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  letter-spacing: 0.02rem;
+}
+
+.wrapper {
+  width: 95%;
+  margin: 3.5rem auto;
+}
+
+.flex-container {
+  column-count: 2;
+  column-gap: 1.02rem;
+}
+
+.item {
+  overflow: hidden;
+  padding: 0.08rem;
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+.card .card__img {
+  overflow: hidden;
+}
+.card .card__img .card__img__content {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 100%;
+  overflow: hidden;
+}
+.card .card__description {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+.card .card__description .card__description__name {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #3E5159;
+}
+.card .card__description .card__description__location {
+  margin: 0 0 15px 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: #5F7D8B;
+}
+.card .card__description .card__description__value {
+  margin: 0 0 7px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #F15A25;
+}
+.card .card__description .card__description__value--strike {
+  text-decoration: line-through;
+  margin: 0 0 3px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #F15A25;
+}
+.card .card__description .card__description__parcel {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #F15A25;
+}
+</style>
+
+</head>
+
+<body>
+<h4 class="dummy-text">Try resizing it!</h4>
+
+<div class="wrapper">
+  <div class="flex-container">
+    
+    <div class="item">
+      <div class="card"> <!-- your (click)="goTo()" here -->
+        <div class="card__img">
+          <div class="card__img__content" style="
+            background: url(&#39;h.jpg&#39;) no-repeat;
+            background-size: cover;
+            background-position: center;
+          "></div>
+        </div>
+        <div class="card__description">
+          <p class="card__description__name">Product name</p>
+          <p class="card__description__location">Short description</p>
+          <p class="card__description__value--strike">$ 6.000,00</p>
+          <p class="card__description__value">$ 3.000,00</p>
+          <span class="card__description__parcel">4x $ 750,00</span>
+        </div>
+      </div> <!-- end card -->
+    </div>
+    
+    <div class="item">
+      <div class="card">
+        <div class="card__img">
+          <div class="card__img__content" style="
+            background: url(&#39;a.jpg&#39;) no-repeat;
+            background-size: cover;
+            background-position: center;
+          "></div>
+        </div>
+        <div class="card__description">
+          <p class="card__description__name">Product name</p>
+          <p class="card__description__location">Short description</p>
+          <p class="card__description__value">$ 3.000,00</p>
+          <span class="card__description__parcel">4x $ 750,00</span>
+        </div>
+      </div> <!-- end card -->
+    </div>
+    
+    <div class="item">
+      <div class="card">
+        <div class="card__img">
+          <div class="card__img__content" style="
+            background: url(&#39;h.jpg&#39;) no-repeat;
+            background-size: cover;
+            background-position: center;
+          "></div>
+        </div>
+        <div class="card__description">
+          <p class="card__description__name">Product name is really big</p>
+          <p class="card__description__location">Short description</p>
+          <p class="card__description__value">$ 3.000,00</p>
+          <span class="card__description__parcel">4x $ 750,00</span>
+        </div>
+      </div> <!-- end card -->
+    </div>
+    
+    <div class="item">
+      <div class="card">
+        <div class="card__img">
+          <div class="card__img__content" style="
+           background: url(&#39;b.jpg&#39;) no-repeat;
+            background-size: cover;
+            background-position: center;
+          "></div>
+        </div>
+        <div class="card__description">
+          <p class="card__description__name">Product name</p>
+          <p class="card__description__location">Short description</p>
+          <p class="card__description__value--strike">$ 6.000,00</p>
+          <p class="card__description__value">$ 3.000,00</p>
+          <span class="card__description__parcel">4x $ 750,00</span>
+        </div>
+      </div> <!-- end card -->
+    </div>
+    
+    <div class="item">
+      <div class="card">
+        <div class="card__img">
+          <div class="card__img__content" style="
+            background: url(&#39;h.jpg&#39;) no-repeat;
+            background-size: cover;
+            background-position: center;
+          "></div>
+        </div>
+        <div class="card__description">
+          <p class="card__description__name">Product name</p>
+          <p class="card__description__location">Short description</p>
+          <p class="card__description__value">$ 3.000,00</p>
+          <span class="card__description__parcel">4x $ 750,00</span>
+        </div>
+      </div> <!-- end card -->
+    </div>
+    
+    <div class="item">
+      <div class="card">
+        <div class="card__img">
+          <div class="card__img__content" style="
+            background: url(&#39;c.jpg&#39;) no-repeat;
+            background-size: cover;
+            background-position: center;
+          "></div>
+        </div>
+        <div class="card__description">
+          <p class="card__description__name">Product name</p>
+          <p class="card__description__location">Short description</p>
+          <p class="card__description__value">$ 3.000,00</p>
+          <span class="card__description__parcel">4x $ 750,00</span>
+        </div>
+      </div> <!-- end card -->
+    </div>
+    
+    <div class="item">
+      <div class="card">
+        <div class="card__img">
+          <div class="card__img__content" style="
+            background: url(&#39;h.jpg&#39;) no-repeat;
+            background-size: cover;
+            background-position: center;
+          "></div>
+        </div>
+        <div class="card__description">
+          <p class="card__description__name">Product name is really big</p>
+          <p class="card__description__location">Short description</p>
+          <p class="card__description__value">$ 3.000,00</p>
+          <span class="card__description__parcel">4x $ 750,00</span>
+        </div>
+      </div> <!-- end card -->
+    </div>
+    
+    <div class="item">
+      <div class="card">
+        <div class="card__img">
+          <div class="card__img__content" style="
+            background: url(&#39;d.jpg&#39;) no-repeat;
+            background-size: cover;
+            background-position: center;
+          "></div>
+        </div>
+        <div class="card__description">
+          <p class="card__description__name">Product name</p>
+          <p class="card__description__location">Short description</p>
+          <p class="card__description__value--strike">$ 6.000,00</p>
+          <p class="card__description__value">$ 3.000,00</p>
+          <span class="card__description__parcel">4x $ 750,00</span>
+        </div>
+      </div> <!-- end card -->
+    </div>
+    
+    <div class="item">
+      <div class="card">
+        <div class="card__img">
+          <div class="card__img__content" style="
+            background: url(&#39;h.jpg&#39;) no-repeat;
+            background-size: cover;
+            background-position: center;
+          "></div>
+        </div>
+        <div class="card__description">
+          <p class="card__description__name">Product name</p>
+          <p class="card__description__location">Short description</p>
+          <p class="card__description__value">$ 3.000,00</p>
+          <span class="card__description__parcel">4x $ 750,00</span>
+        </div>
+      </div> <!-- end card -->
+    </div>
+    
+    <div class="item">
+      <div class="card">
+        <div class="card__img">
+          <div class="card__img__content" style="
+            background: url(&#39;e.jpg&#39;) no-repeat;
+            background-size: cover;
+            background-position: center;
+          "></div>
+        </div>
+        <div class="card__description">
+          <p class="card__description__name">Product name is really big</p>
+          <p class="card__description__location">Short description</p>
+          <p class="card__description__value">$ 3.000,00</p>
+          <span class="card__description__parcel">4x $ 750,00</span>
+        </div>
+      </div> <!-- end card -->
+    </div>
+   
+  </div> <!-- end flex-container -->
+</div>
+
+</body></html>

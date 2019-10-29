@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="12pag.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<style type="text/css">
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+ 
+body {
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation */
+.navigation {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  position: fixed;
+  transition: all 900ms ease-in-out;                           /* make sure it's at the top */
+}
+ 
+.navigation-left {
+  margin-left: -350px;
+}
+ 
+.logo{
+  color: #ffe;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size: 23px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 6px;
+}
+
+.navigation-left a {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  .text-transform: uppercase;
+  color: #ffe;
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  width: 90px;
+  height: 30px;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  display: inline-block;
+  text-align: center;
+  line-height: 25px;
+  transition: all .2s;
+}
+ 
+.navigation-left a:hover,
+.navigation-left a:focus {
+  border-color: rgb(234, 46, 73);
+  background-color: rgba(44, 45, 47, 0);
+}
+ 
+.navigation-center {
+  margin-right: 85px;
+}
+ 
+.navigation-right {
+  display: flex;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+}
+ 
+.login-btn {
+  background-color: #b8b8b9;
+  width: 97px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  color: #333745;
+  text-transform: uppercase;
+  margin-left: 20px;
+  transition: all .2s;
+  cursor: pointer;
+}
+.login-btn:hover {
+	
+  transform: scale(1.06);
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 40%;
+  left: 8%;
+  color: white;
+  max-width: 600px;
+}
+
+.hero-text button {
+  margin-top: 15px;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: #e74c3c;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.hero-text button:hover {
+  background: rgb(191, 76, 60)
+}
+
+.h1text{
+  color: #ffe;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size: 45px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.ptext{
+  color: #ffe;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+  margin-top: 10px;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+	</style>
+
+
+</head>
+<body>
+
+<!-- Navigation -->
+
+<div class="navigation" id="navigation">
+
+  <div class="logo">
+    <p>AddmissionASK</p>
+  </div>
+
+  <div class="navigation-left">
+    <a href="13page.html">Home</a>
+    <a href="#">Notice</a>
+    <a href="#">Result</a>
+    <a href="#">Scholarship</a>
+  </div>
+
+  <div class="navigation-right">
+    <button class="login-btn" onclick="window.location='14page.php';">Login</button>
+
+  </div>
+
+</div>
+
+<div class="container">
+  <img src="aaaaa.jpg" alt="Norway" style="width:100%;">
+  <div class="hero-text">
+    <h1 class="h1text">Learn what you need</h1>
+    <p class="ptext">There are 34 Public University in Bangladesh and Private University has more than 65. Every Public University take admission test for the honours program. You will get all public university admission test information from this website.</p>
+    <button>Become A Writter</button>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      document.getElementById("navigation").style.height = "70px";
+      document.getElementById("navigation").style.backgroundColor = "rgba(0,0,0,0.8)";
+    } else {
+      document.getElementById("navigation").style.height = "100px";
+      document.getElementById("navigation").style.backgroundColor = "transparent";
+    }
+}
+
+</script>
+
+
+</body>
+</html>

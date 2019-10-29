@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.container {
+    background: rgb(255, 255, 255);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    padding: 0em;
+}
+
+.slide-wrapper {
+    position: relative;
+    margin: 0 auto;
+    padding: 0em;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    box-shadow: 0px 1px 2px 0px rgb(53, 53, 53);
+    overflow: hidden;
+}
+
+#slide-role {
+    background: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 100%;
+    z-index: 100;
+    transition: left .5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    /* flex */
+    display: flex;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-1 {
+    background-image: url("aaa.jpg");
+}
+
+.slide-2 {
+    background-image: url("aaa.jpg");
+}
+
+.slide-3 {
+    background-image: url("aaa.jpg");
+}
+
+.slide-4 {
+    background-image: url("aaa.jpg");
+}
+
+.btn,.btn::after {
+    border-radius: 0%;
+    transition: all .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.btn {
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    bottom: 5%;
+    width: 30px;
+    height: 10px;
+    cursor: pointer;
+    transform: scale(1.0);
+    z-index: 1000;
+    opacity: .7;
+}
+
+.btn:nth-of-type(1) {
+    left: 44%;
+}
+
+.btn:nth-of-type(2) {
+    left: 48%;
+}
+
+.btn:nth-of-type(3) {
+    left: 52%;
+}
+
+.btn:nth-of-type(4) {
+    left: 56%;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+}
+
+input[type="radio"]:checked#slide-2-trigger~div.slide-wrapper>div#slide-role {
+    left: -100%;
+}
+
+input[type="radio"]:checked#slide-3-trigger~div.slide-wrapper>div#slide-role {
+    left: -200%;
+}
+
+input[type="radio"]:checked#slide-4-trigger~div.slide-wrapper>div#slide-role {
+    left: -300%;
+}
+
+input[type="radio"]:checked+label.btn {
+    transform: scale(1.2);
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(53, 53, 53, 0.308);
+}
+
+@media only screen and (max-width: 750px) {
+    .slide-wrapper {
+        width: 90%;
+        height: 100%;
+    }
+    .btn:nth-of-type(1) {
+        left: 93%;
+        bottom: 60%;
+    }
+    .btn:nth-of-type(2) {
+        left: 93%;
+        bottom: 50%;
+    }
+    .btn:nth-of-type(3) {
+        left: 93%;
+        bottom: 40%;
+    }
+    .btn:nth-of-type(4) {
+        left: 93%;
+        bottom: 30%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .btn:nth-of-type(1) {
+        left: 91%;
+    }
+    .btn:nth-of-type(2) {
+        left: 91%;
+    }
+    .btn:nth-of-type(3) {
+        left: 91%;
+    }
+    .btn:nth-of-type(4) {
+        left: 91%;
+    }
+}
+
+
+
+
+echo "<div class="container overflow card-4 margin"><div id="first">";
+echo "<img src=".$row["img"]";
+echo "style="width:100%"><div class="container"><p>";
+echo $row["title"];
+echo "</p></div></div><div class="white overflow left-small"><div class="container"><h3><b>";
+echo $row["title"];echo "</b></h3><h5>";
+echo $row["title"];
+echo ", <span class="opacity">";
+echo $row["title"];echo "</span></h5></div><div class="container"><p>";
+echo $row["title"];
+echo "</p><div class="row margin-top"><div class="col m8 s12"><p><button class="button padding-large white border"><b> READ MORE »</b></button></p></div><div class="col m4 hide-small"><p><span class="padding-large right"><b>Comments  </b> <span class="tag">0</span></span></p></div></div></div></div></div>";

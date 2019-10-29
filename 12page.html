@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>#3</title>
+  <link rel="stylesheet" href="12page.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- BUTTONS (input/labels) -->
+        <input type="radio" name="slider" id="slide-1-trigger" class="trigger" checked>
+        <label class="btn" for="slide-1-trigger"></label>
+
+        <input type="radio" name="slider" id="slide-2-trigger" class="trigger">
+        <label class="btn" for="slide-2-trigger"></label>
+
+        <input type="radio" name="slider" id="slide-3-trigger" class="trigger">
+        <label class="btn" for="slide-3-trigger"></label>
+
+        <input type="radio" name="slider" id="slide-4-trigger" class="trigger">
+        <label class="btn" for="slide-4-trigger"></label>
+
+        <!-- SLIDES -->
+        <div class="slide-wrapper">
+            <div id="slide-role">
+                <div class="slide slide-1"></div>
+                <div class="slide slide-2"></div>
+                <div class="slide slide-3"></div>
+                <div class="slide slide-4"></div>
+            </div>
+        </div>
+
+    </div>
+  
+<script>
+    
+var slideIndex = 1;
+var timer = null;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  clearTimeout(timer);
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  clearTimeout(timer);
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("trigger");
+  if (n==undefined){n = ++slideIndex}
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  slides[slideIndex-1].checked = true;
+  timer = setTimeout(showSlides, 5000);
+} 
+
+</script>
+
+
+</body>
+
+</html>

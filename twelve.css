@@ -1,0 +1,32 @@
+.portfolio_break,.portfolio_break2{
+	width:100%;
+	overflow:hidden;
+	-webkit-filter:grayscale(0%)
+}
+.portfolio_break{
+		height:350px;
+		background:linear-gradient(#222,transparent 30%),linear-gradient(0deg,#222,transparent 30%),url(b.jpg);
+		background-attachment:fixed;
+		background-size:cover;
+		background-position:center
+	}
+.portfolio_break2{
+	height:450px;
+	background:linear-gradient(#222,transparent 30%),linear-gradient(0deg,#222,transparent 30%),url(a.jpg);
+	background-attachment:fixed;
+	background-size:cover;
+	background-position:center
+}
+.campusText{
+	color:#fff;
+	font-size:55px;
+	font-weight:700;
+	text-transform:uppercase;
+	margin-top:150px;
+	text-align:center
+}
+.mapLocation{
+	color:#fff;
+	padding-top:20px;
+	padding-bottom:20px
+}

@@ -1,0 +1,36 @@
+/body{
+  background:url('.jpg') no-repeat;
+  background-size: cover;
+  font-family: arial;
+  font-size: 20px;
+  margin: 40px;
+  line-height: 24px;
+  width: 1350px;
+}
+/div img{
+  width: 1300px;
+  height: 395px;
+}
+
+
+@media(max-width: 1300px){
+  .{
+    width: 95%;
+  }
+}
+.row{
+  background: lightblue;
+  .width: 1283px;
+  margin-top: 20px;
+  padding-left: 50px;
+}
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.column{
+  float: left;
+  width: 28%;
+  padding: 15px;
+}
